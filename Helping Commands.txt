@@ -1,0 +1,38 @@
+Insatlling Node.js YARN
+
+1. Install node.js  from https://nodejs.org.
+2. Run command "node -v" on the command prompt to check if node install.
+3. Run command "npm -v" on the command prompt.
+4. Run command "npm install -g yarn" on the command prompt. This is going to install globally on your machine.
+5. Run command "yarn --version" on the command prompt.
+6. Restart your machine if using windows.
+
+Setting up a Web Server
+
+1. Create folder 'react-course-projects'.
+2. Create folder 'indecision-app' inside above folder.
+3. Open folder 'indecision-app' in VS Code or any other IDE.
+4. Open the command prompt and navigate to 'indecision-app' folder. 
+5. Create a subfolder inside 'indecision-app' and name it public.
+6. This folder is going to contain all the assets, that we actually want to serve up.  
+7. Create index.html inside the public folder.
+8. Write HTML boilerplate inside the file.
+9. Recommended: to install 'emmet'  plugin for auto-completion.
+10. Install module live-server, use the command 'yarn global add live-server'. To check if it installs correctly, type and runs the command 'live-server -v'.
+10. Now run the command 'live-server public'. This will serve up our public folder.
+
+Hello React
+
+1. Remove text context inside body tag in index.html.
+2. Now we are going to install react using CDN
+3. In the body tag, include following scripts fir above purpose.
+    <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+    <script src="/scripts/app.js"></script>
+4. create folder inside public folder, create scripts folder and then add a file app.js inside scripts folder.
+5. Goto browser and select tab where local host app is running and then press Ctrl+shift+I.
+6. On the console Type and enter React and then enter ReactDOM.
+7. Console a message in app.js and save the file,  and without refreshing page, you will see the output on the console. 
+8. Here in app.js, we will be using 'JSX' also called Javascript XML. 
+9. 
+ 
