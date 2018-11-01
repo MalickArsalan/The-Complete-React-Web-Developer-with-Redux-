@@ -29,10 +29,21 @@ Hello React
     <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
     <script src="/scripts/app.js"></script>
-4. create folder inside public folder, create scripts folder and then add a file app.js inside scripts folder.
-5. Goto browser and select tab where local host app is running and then press Ctrl+shift+I.
+4. create a folder inside a public folder, create scripts folder and then add a file app.js inside scripts folder.
+5. Goto browser and, then select tab where localhost app is running and then press Ctrl+shift+I.
 6. On the console Type and enter React and then enter ReactDOM.
 7. Console a message in app.js and save the file,  and without refreshing page, you will see the output on the console. 
 8. Here in app.js, we will be using 'JSX' also called Javascript XML. 
-9. 
+9. We are going to use babel. It is a Javascript compiler. The most common use of Babel is taking features from ES6 and ES7 and compiling them to ES5 code.
+
+Setting up Babel
+
+1. We have to add various plugins and presets in order to babel perform compilation on JSX code.
+2. We will be using two presets from Babel, one is env and other is React.
+3. Open the command prompt, navigate to the project folder and run following command.
+	* yarn global add babel-cli@6.24.1.
+4. Now Babel command will be available in command prompt. The following command will help us to find if babel is installed correctly or not
+	*  babel --help
+5. Now run the following command
+	* yarn init. This command will ask a few questions. Just skip all and only 
  
