@@ -45,5 +45,9 @@ Setting up Babel
 4. Now Babel command will be available in command prompt. The following command will help us to find if babel is installed correctly or not
 	*  babel --help
 5. Now run the following command
-	* yarn init. This command will ask a few questions. Just skip all and only 
- 
+	* yarn init. This command will ask a few questions. Just skip all and only type author name as Malick Arsalan or any name you want.
+    Note: What it does? It generates a brand new file in our project.
+    * yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2.
+    Note: This will add dependencies in the package.json file. Further, it creates a node_modules folder where it installs all modules required by above presets we have installed previously. It also creates a "yarn.lock" file.  It is a file, which we will never change manually.
+6. Now create new folder 'src' and create file app.js inside it.
+7. app.js inside 'src' folder is where we write JSX code. app.js inside 'script' folder is gonna auto-generate file
