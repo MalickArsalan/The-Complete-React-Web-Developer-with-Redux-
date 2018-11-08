@@ -11,7 +11,7 @@ var template = React.createElement(
 */
 
  var template =( 
- <div>
+<div>
      <h1>Indecision App</h1>
      <p>This is some info</p>
      <ol>
@@ -19,7 +19,7 @@ var template = React.createElement(
          <li>Item two</li>
          <li>Item three</li>
      </ol>
-// </div>
+</div>
 );
 
 var appRoot = document.getElementById('app');

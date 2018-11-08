@@ -51,3 +51,28 @@ Setting up Babel
     Note: This will add dependencies in the package.json file. Further, it creates a node_modules folder where it installs all modules required by above presets we have installed previously. It also creates a "yarn.lock" file.  It is a file, which we will never change manually.
 6. Now create new folder 'src' and create file app.js inside it.
 7. app.js inside 'src' folder is where we write JSX code. app.js inside 'script' folder is gonna auto-generate file
+8. '$:/src/app.js' will compile and save in '$:public/script/app.js' and when it updates it will render on index.html.
+9. Open the command prompt and execute the following scripts
+	* babel src/app.js --out-file=public/scripts.app.js --presets=env,react
+	Break up of above script
+                    babel = use when running babel script
+               src/app.js = the file has to compile
+               --out-file = defin file where compile code will get save
+	public/scripts.app.js = output file name
+                --presets = use to set presets we have to use
+                env,react = names of preset
+ 	Note: This script will compile '$:/src/app.js' and update the compile code into '$:/script/app.js'.
+	*  babel src/app.js --out-file=public/scripts.app.js --presets=env,react --watch
+	Note :  This is going to watch '$:/src/app.js' changes and automatically create new '$:public/script/app.js' with compiled code.
+10. Open another command prompt and the following script
+	* live-server public
+11. Now Open VS Code and start codding, change the template variable and you will see the change in '$:public/script/app.js' file and on browser simultaneously.
+12. When we get react code from any repository, it does not provide node_modules directory, for such case we have to run the following script but before we have to stop babel script.
+	*  yarn install
+	Note: this will check package.json and install all dependencies.
+
+Exploring JSX
+
+
+
+
