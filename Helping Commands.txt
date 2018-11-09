@@ -72,7 +72,45 @@ Setting up Babel
 	Note: this will check package.json and install all dependencies.
 
 Exploring JSX
+1. Install plugin Babel ES6/ES7.
+2. Also, install the following plugin
+	* Beautify css/sass/scss/less
+	* Duplicate action
+	* ESLint
+	* Git History (git log)
+	* Path intellisense
+	* Sass Lint
+	* SCSS IntelliSense
+	* Sublime Text Keymap and Settings Importer
+3. In JSX file we can have single root element. For this we wil use <div/> as root tab or element.
+Challenge: 1
+* Create a templateTwo var JSX expression
+* root div
+* h1 -> Name
+* p ->  Age
+* p ->  Location
+* Render templateTwo instead of template
 
+JSX Expression  
+Challenge: 2
+* Create app object title/subtitle
+* use title/subtitle in the template
+* render template
 
+Conditional Rendering in JSX
+1. We can use the following
+* if statement
+* ternary operators
+* logical and operator
+2.  We can use undefined, null, True, and false in JSX but JSX just ignore these values. This is a very useful feature.
+Challenge: 3
+* Only render the subtitle (and 'p' tag), if subtitle exist - Logical and operator
+* Render new p tag - if 'options.length > 0', then "Here are your options" else   "No options"
 
-
+ES6 Aside const and Let
+1. Create a folder inside src with a name playground
+2. Inside folder create file src/playground/es6-let-const.js
+3. open command prompt where Babel is running.
+4. Press Ctrl + C to stop Babel.
+5. execute the following script
+	* babel src/playground/es6-let-const.js --out-file=public/scripts/app.js --presets=env,react --watch
